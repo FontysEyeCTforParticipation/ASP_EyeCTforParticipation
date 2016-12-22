@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using EyeCTforParticipation.Data;
 using EyeCTforParticipation.Models;
 using CryptSharp;
-using System.Windows.Forms;
 using System.IO;
 using System.Device.Location;
 using System.Text.RegularExpressions;

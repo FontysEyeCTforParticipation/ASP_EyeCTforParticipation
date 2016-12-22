@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CryptSharp, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CryptSharpOfficial.2.1.0.0\lib\CryptSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -122,24 +126,23 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Data\ChatMemoryContext.cs" />
-    <Compile Include="Data\ChatSQLContext.cs" />
-    <Compile Include="Data\HelpRequestMemoryContext.cs" />
-    <Compile Include="Data\HelprequestSQLContext.cs" />
-    <Compile Include="Data\IChatContext.cs" />
-    <Compile Include="Data\IHelprequestContext.cs" />
-    <Compile Include="Data\IReviewContext.cs" />
-    <Compile Include="Data\IUserContext.cs" />
-    <Compile Include="Data\MemoryContext.cs" />
-    <Compile Include="Data\ReviewMemoryContext.cs" />
-    <Compile Include="Data\ReviewSQLContext.cs" />
-    <Compile Include="Data\UserMemoryContext.cs" />
-    <Compile Include="Data\UserSQLContext.cs" />
+    <Compile Include="Data\context\ChatMemoryContext.cs" />
+    <Compile Include="Data\context\ChatSQLContext.cs" />
+    <Compile Include="Data\context\HelpRequestMemoryContext.cs" />
+    <Compile Include="Data\context\HelprequestSQLContext.cs" />
+    <Compile Include="Data\interface\IChatContext.cs" />
+    <Compile Include="Data\interface\IHelprequestContext.cs" />
+    <Compile Include="Data\interface\IReviewContext.cs" />
+    <Compile Include="Data\interface\IUserContext.cs" />
+    <Compile Include="Data\context\MemoryContext.cs" />
+    <Compile Include="Data\context\ReviewMemoryContext.cs" />
+    <Compile Include="Data\context\ReviewSQLContext.cs" />
+    <Compile Include="Data\context\UserMemoryContext.cs" />
+    <Compile Include="Data\context\UserSQLContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logic\ChatRepository.cs" />
-    <Compile Include="Logic\CustomFonts.cs" />
     <Compile Include="Logic\GoogleMapsApi.cs" />
     <Compile Include="Logic\HelpRequestRepository.cs" />
     <Compile Include="Logic\ReviewRepository.cs" />
