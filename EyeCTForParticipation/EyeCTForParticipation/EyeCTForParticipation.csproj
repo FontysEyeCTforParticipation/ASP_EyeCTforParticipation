@@ -51,6 +51,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Device" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -121,9 +122,47 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\ChatMemoryContext.cs" />
+    <Compile Include="Data\ChatSQLContext.cs" />
+    <Compile Include="Data\HelpRequestMemoryContext.cs" />
+    <Compile Include="Data\HelprequestSQLContext.cs" />
+    <Compile Include="Data\IChatContext.cs" />
+    <Compile Include="Data\IHelprequestContext.cs" />
+    <Compile Include="Data\IReviewContext.cs" />
+    <Compile Include="Data\IUserContext.cs" />
+    <Compile Include="Data\MemoryContext.cs" />
+    <Compile Include="Data\ReviewMemoryContext.cs" />
+    <Compile Include="Data\ReviewSQLContext.cs" />
+    <Compile Include="Data\UserMemoryContext.cs" />
+    <Compile Include="Data\UserSQLContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\ChatRepository.cs" />
+    <Compile Include="Logic\CustomFonts.cs" />
+    <Compile Include="Logic\GoogleMapsApi.cs" />
+    <Compile Include="Logic\HelpRequestRepository.cs" />
+    <Compile Include="Logic\ReviewRepository.cs" />
+    <Compile Include="Logic\Session.cs" />
+    <Compile Include="Logic\UserRepository.cs" />
+    <Compile Include="Models\ApplicationModel.cs" />
+    <Compile Include="Models\ApplicationStatus.cs" />
+    <Compile Include="Models\ChatModel.cs" />
+    <Compile Include="Models\HelpRequestCompare.cs" />
+    <Compile Include="Models\HelpRequestComparer.cs" />
+    <Compile Include="Models\HelprequestModel.cs" />
+    <Compile Include="Models\HelpRequestUrgency.cs" />
+    <Compile Include="Models\HelpSeekerAidWorkerModel.cs" />
+    <Compile Include="Models\MessageModel.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Models\ReviewModel.cs" />
+    <Compile Include="Models\ReviewReplyModel.cs" />
+    <Compile Include="Models\SearchOrder.cs" />
+    <Compile Include="Models\UserCompare.cs" />
+    <Compile Include="Models\UserComparer.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\UserRole.cs" />
+    <Compile Include="Models\VolunteerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -147,9 +186,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\" />
-    <Folder Include="Data\" />
-    <Folder Include="Logic\" />
-    <Folder Include="Models\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
