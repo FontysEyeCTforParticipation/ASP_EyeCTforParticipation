@@ -8,7 +8,7 @@ using EyeCTforParticipation.Models;
 
 namespace EyeCTforParticipation.Logic
 {
-    class ChatRepository
+    public class ChatRepository
     {
         IChatContext context;
 

@@ -7,7 +7,7 @@ using EyeCTforParticipation.Models;
 
 namespace EyeCTforParticipation.Data
 {
-    interface IChatContext
+    public interface IChatContext
     {
         List<ChatModel> List();
         List<ChatModel> ListAsVolunteer(int userId);

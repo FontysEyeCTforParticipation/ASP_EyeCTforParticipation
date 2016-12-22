@@ -6,7 +6,7 @@ using EyeCTforParticipation.Models;
 
 namespace EyeCTforParticipation.Data
 {
-    class ChatSQLContext : IChatContext
+    public class ChatSQLContext : IChatContext
     {
         public void Clear(int chatId)
         {

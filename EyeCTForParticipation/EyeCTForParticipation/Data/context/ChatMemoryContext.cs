@@ -8,7 +8,7 @@ using EyeCTforParticipation.Data.MemoryContext;
 
 namespace EyeCTforParticipation.Data
 {
-    class ChatMemoryContext : IChatContext
+    public class ChatMemoryContext : IChatContext
     {
         public void Clear(int chatId)
         {
