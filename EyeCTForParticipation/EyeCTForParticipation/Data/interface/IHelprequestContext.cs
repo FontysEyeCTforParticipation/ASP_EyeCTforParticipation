@@ -8,7 +8,7 @@ using System.Device.Location;
 
 namespace EyeCTforParticipation.Data
 {
-    interface IHelpRequestContext
+    public interface IHelpRequestContext
     {
         List<HelpRequestModel> Search(SearchOrder order);
         List<HelpRequestModel> Search(string keywords, SearchOrder order);

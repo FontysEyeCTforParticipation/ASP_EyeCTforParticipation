@@ -7,7 +7,7 @@ using EyeCTforParticipation.Models;
 
 namespace EyeCTforParticipation.Data
 {
-    interface IReviewContext
+    public interface IReviewContext
     {
         List<ReviewModel> GetFromHelpSeeker(int id);
         List<ReviewModel> GetFromVolunteer(int id);

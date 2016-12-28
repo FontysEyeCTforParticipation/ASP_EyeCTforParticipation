@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 
 namespace EyeCTforParticipation.Logic
 {
-    class HelpRequestRepository
+    public class HelpRequestRepository
     {
         IHelpRequestContext context;
 
@@ -175,7 +175,7 @@ namespace EyeCTforParticipation.Logic
         {
             return context.GetFromHelpSeeker(userId);
         }
-
+        
         /// <summary>
         /// Create a new help request for a specific help seeker if the id is 0.
         /// Else if a help request already exists with the same id, the existing help request will be updated.

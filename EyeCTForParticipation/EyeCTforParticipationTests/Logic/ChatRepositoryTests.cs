@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EyeCTforParticipation.Data;
+using EyeCTforParticipation.Models;
 
 namespace EyeCTforParticipation.Logic.Tests
 {
@@ -17,14 +18,22 @@ namespace EyeCTforParticipation.Logic.Tests
         public ChatRepositoryTests()
         {
             context = new ChatMemoryContext();
+            UserModel user1 = new UserModel();
+            UserModel user2 = new UserModel();
+            user1.Name = "User1";
+            user2.Name = "User2";
+            MessageModel message1 = new MessageModel();
+            message1.User = user1;
 
+            context.SendMessage(new MessageModel());
             testRepo = new ChatRepository(context);
         }
-        
+
         [TestMethod()]
         public void ListTest()
         {
-            
+            bool testCorrect = true;
+
         }
 
         [TestMethod()]
